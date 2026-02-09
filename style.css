@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-table {
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 8px;
+}
+
+input, select, textarea {
+    width: 200px;
+}
