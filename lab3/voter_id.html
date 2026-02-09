@@ -5,40 +5,41 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Voter ID Card</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;background:#f2f4f7;padding:24px}
-    .card{width:420px;border-radius:8px;background:#fff;padding:18px;border:1px solid #ddd;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;padding:28px;display:flex;align-items:center;justify-content:center}
+    .card{width:520px;border-radius:8px;background:#fff;padding:18px;border:1px solid #e6eaf0;box-shadow:0 8px 24px rgba(3,26,85,0.04)}
     .header{display:flex;align-items:center;gap:12px}
-    .logo{width:64px;height:48px;background:#002b5c;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;border-radius:4px}
-    h1{font-size:18px;margin:0}
-    .row{display:flex;gap:12px;margin-top:10px}
-    .photo{width:100px;height:120px;background:#e9eef6;border:1px solid #cbd6e8}
+    .logo{width:72px;height:52px;background:#002b5c;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border-radius:4px}
+    h1{font-size:16px;margin:0}
+    .row{display:flex;gap:14px;margin-top:12px}
+    .photo{width:110px;height:130px;background:#eef3fb;border:2px solid #d7e3f6;border-radius:4px}
     .meta{flex:1}
-    .label{color:#666;font-size:12px}
-    .value{font-weight:700}
-    .small{font-size:12px;color:#444;margin-top:8px}
+    .label{color:#475569;font-size:12px}
+    .value{font-weight:800;color:#0c264f}
+    .small{font-size:12px;color:#475569;margin-top:8px}
   </style>
 </head>
 <body>
   <div class="card">
     <div class="header">
-      <div class="logo">EC</div>
+      <div class="logo" aria-hidden>EC</div>
       <div>
         <h1>Election Commission of India</h1>
-        <div class="small">Voter ID Card</div>
+        <div class="small">Elector's Photo Identity Card (EPIC)</div>
       </div>
     </div>
     <div class="row">
-      <div class="photo"></div>
+      <div class="photo" aria-hidden></div>
       <div class="meta">
         <div class="label">Name</div>
         <div class="value">RAHUL KUMAR</div>
-        <div class="label">Voter ID</div>
+        <div class="label">Voter ID / EPIC</div>
         <div class="value">ABCD1234567</div>
         <div class="label">Address</div>
-        <div class="value">123, MG Road, Bangalore</div>
+        <div class="value">123, MG Road, Bangalore, Karnataka, 560001</div>
       </div>
     </div>
     <div class="small">DOB: 01/01/1990 &nbsp; | &nbsp; Gender: Male</div>
+    <div style="margin-top:10px;font-size:12px;color:#6b7280">Signature of Issuing Authority</div>
   </div>
 </body>
 </html>

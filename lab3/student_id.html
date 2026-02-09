@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Student ID Card</title>
   <style>
-    body{font-family:Verdana,Arial;background:#eef2ff;padding:24px}
-    .card{width:360px;background:#fff;padding:14px;border-radius:8px;border:1px solid #dfe7ff}
-    .school{font-weight:800;color:#0b3d91}
-    .info{display:flex;gap:10px;margin-top:12px}
-    .photo{width:88px;height:104px;background:#f3f6ff}
+    body{font-family:Verdana,Arial,Helvetica,sans-serif;background:#f0f4ff;padding:28px;display:flex;align-items:center;justify-content:center}
+    .card{width:420px;background:#fff;padding:16px;border-radius:8px;border:1px solid #d9e6ff;box-shadow:0 8px 20px rgba(13,40,130,0.04)}
+    .school{font-weight:900;color:#082a7a;font-size:16px}
+    .info{display:flex;gap:14px;margin-top:12px}
+    .photo{width:100px;height:124px;background:#f7fbff;border:2px solid #e1eaff;border-radius:4px}
     .meta{flex:1}
-    .label{font-size:12px;color:#6b7280}
-    .value{font-weight:700}
+    .label{font-size:12px;color:#54607a}
+    .value{font-weight:800;color:#0d224f}
     .footer{margin-top:10px;font-size:12px;color:#5b616b}
+    .school-info{font-size:12px;color:#61708b}
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="school">Springfield International School</div>
+    <div>
+      <div class="school">Springfield International School</div>
+      <div class="school-info">Affiliated to CBSE &nbsp; | &nbsp; Address: 88 Green Park, Delhi</div>
+    </div>
     <div class="info">
-      <div class="photo"></div>
+      <div class="photo" aria-hidden></div>
       <div class="meta">
         <div class="label">Student</div>
         <div class="value">AMIT VERMA</div>
@@ -30,7 +34,7 @@
         <div class="value">31 Mar 2026</div>
       </div>
     </div>
-    <div class="footer">ID No: STU2023-00023</div>
+    <div class="footer">ID No: STU2023-00023 &nbsp; | &nbsp; Contact: +91 9876543210</div>
   </div>
 </body>
 </html>

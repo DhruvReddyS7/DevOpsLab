@@ -5,36 +5,40 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aadhar Card</title>
   <style>
-    body{font-family:Segoe UI,Arial;background:#f7fafc;padding:24px}
-    .card{width:420px;background:#fff;padding:16px;border-radius:8px;border:1px solid #e6eef6}
+    body{font-family:Segoe UI,Arial,Helvetica,sans-serif;background:#f3f6fb;padding:28px;display:flex;align-items:center;justify-content:center}
+    .card{width:500px;background:#fff;padding:18px;border-radius:8px;border:1px solid #dbeaf8;box-shadow:0 6px 20px rgba(10,40,80,0.04)}
     .top{display:flex;justify-content:space-between;align-items:center}
-    .title{font-weight:700}
-    .photo{width:92px;height:112px;background:#f1f5f9;border:1px solid #dbeafe}
-    .grid{display:flex;gap:12px;margin-top:12px}
+    .brand{font-weight:800;color:#0b63a6;font-size:14px}
+    .sub{font-size:12px;color:#374151}
+    .photo{width:100px;height:120px;background:#f8fafc;border:2px solid #e6f0fb;border-radius:4px}
+    .grid{display:flex;gap:16px;margin-top:14px}
     .meta{flex:1}
-    .label{font-size:12px;color:#6b7280}
-    .value{font-weight:700}
-    .qr{width:64px;height:64px;background:#e6eef6}
+    .label{font-size:11px;color:#6b7280;margin-top:8px}
+    .value{font-weight:700;font-size:14px;color:#0f172a}
+    .qr{width:72px;height:72px;background:linear-gradient(135deg,#e6f0fb,#dbeaf8);border-radius:6px}
+    .addr{font-size:12px;color:#374151;margin-top:8px}
+    .muted{font-size:10px;color:#9ca3af}
   </style>
 </head>
 <body>
   <div class="card">
     <div class="top">
       <div>
-        <div class="title">Unique Identification Authority of India</div>
-        <div class="label">Aadhaar</div>
+        <div class="brand">Unique Identification Authority of India</div>
+        <div class="sub muted">Aadhaar</div>
       </div>
-      <div class="qr"></div>
+      <div class="qr" aria-hidden></div>
     </div>
     <div class="grid">
-      <div class="photo"></div>
+      <div class="photo" aria-hidden></div>
       <div class="meta">
         <div class="label">Name</div>
         <div class="value">SANGEETA R</div>
-        <div class="label">Aadhaar</div>
+        <div class="label">Aadhaar Number</div>
         <div class="value">1234 5678 9012</div>
         <div class="label">Address</div>
-        <div class="value">45, Park Avenue, Chennai</div>
+        <div class="addr">45, Park Avenue, Chennai, Tamil Nadu, 600001</div>
+        <div class="muted">DOB: 12/05/1988 &nbsp; | &nbsp; Gender: Female</div>
       </div>
     </div>
   </div>
