@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voter ID Card</title>
+  <style>
+    body{font-family:Verdana,Arial,sans-serif;background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 100%);padding:40px;display:flex;align-items:center;justify-content:center;min-height:100vh}
+    .card{width:650px;background:#F5F5F5;padding:0;border-radius:12px;box-shadow:0 40px 80px rgba(27,94,32,0.4);overflow:hidden}
+    .banner{background:linear-gradient(90deg,#1B5E20,#2E7D32);color:white;padding:24px;display:flex;justify-content:space-between;align-items:center}
+    .banner-left{flex:1}
+    .org-name{font-size:18px;font-weight:900;letter-spacing:1px}
+    .card-type{font-size:12px;font-weight:600;margin-top:4px;opacity:0.9}
+    .emblem{width:70px;height:70px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900;color:#1B5E20}
+    .main{padding:28px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .left{flex:0 0 auto}
+    .photo{width:130px;height:160px;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border:2px solid #1B5E20;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:50px}
+    .right{flex:1}
+    .field{margin-bottom:16px}
+    .field-label{font-size:11px;color:#555;font-weight:700;text-transform:uppercase;margin-bottom:2px}
+    .field-value{font-size:15px;font-weight:800;color:#1B5E20;font-family:Arial}
+    .info-strip{background:#FFFACD;padding:14px;margin-top:16px;border-left:4px solid #FFC107;font-size:11px;color:#333}
+    .footer{background:#EEEEEE;padding:14px;border-top:1px solid #DDD;text-align:center;font-size:10px;color:#666}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="banner">
+      <div class="banner-left">
+        <div class="org-name">ELECTION COMMISSION</div>
+        <div class="card-type">Voter Identity Card (EPIC)</div>
+      </div>
+      <div class="emblem">🇮🇳</div>
+    </div>
+    <div class="main">
+      <div class="grid">
+        <div class="left">
+          <div class="photo">🗳️</div>
+        </div>
+        <div class="right">
+          <div class="field">
+            <div class="field-label">Voter Name</div>
+            <div class="field-value">RAHUL KUMAR</div>
+          </div>
+          <div class="field">
+            <div class="field-label">Voter ID</div>
+            <div class="field-value" style="letter-spacing:2px">ABCD1234567</div>
+          </div>
+          <div class="field">
+            <div class="field-label">Father's Name</div>
+            <div class="field-value">RAJESH KUMAR</div>
+          </div>
+          <div class="field">
+            <div class="field-label">DOB</div>
+            <div class="field-value">01/01/1990</div>
+          </div>
+          <div class="field">
+            <div class="field-label">Address</div>
+            <div class="field-value" style="font-size:12px">123 MG Road, Bangalore</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-strip">
+        ⚠️ This card is valid for voting in all elections held in India. Voter should carry this card during voting.
+      </div>
+    </div>
+    <div class="footer">
+      Issued by: Chief Electoral Officer, Karnataka | Issue Date: 15/02/2020
+    </div>
+  </div>
+</body>
+</html>
+    body{font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#f7f9fc,#f0f5fb);padding:40px;display:flex;align-items:center;justify-content:center}
+    .card{width:560px;border-radius:14px;background:linear-gradient(135deg,#ffffff,#fafbfd);padding:24px;border:1px solid #e8ecf5;box-shadow:0 24px 50px rgba(3,26,85,0.1);position:relative;overflow:hidden}
+    .card:before{content:"";position:absolute;left:-120px;top:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,43,92,0.06),transparent);pointer-events:none}
+    .header{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:2px solid #eef0f8}
+    .logo{width:80px;height:60px;background:#002b5c;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border-radius:8px;flex-shrink:0}
+    .logo-img{width:150px;height:36px;display:block}
+    h1{font-size:17px;margin:0;color:#0c264f;font-weight:900}
+    .small{font-size:12px;color:#546581;margin-top:4px;font-weight:500}
+    .row{display:flex;gap:18px;margin-top:16px}
+    .photo{width:130px;height:155px;object-fit:cover;border-radius:8px;border:3px solid #e0ecf6;background:#f0f5fb}
+    .meta{flex:1}
+    .label{color:#546581;font-size:12px;font-weight:600;margin-top:8px}
+    .value{font-weight:800;color:#0c264f;font-size:15px}
+    .small-text{font-size:12px;color:#546581;margin-top:12px;padding-top:12px;border-top:1px solid #eef0f8}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <img class="logo-img" src="../assets/images/logo_ec.svg" alt="Election Commission logo">
+      <div>
+        <h1>Election Commission of India</h1>
+        <div class="small">Elector's Photo Identity Card (EPIC)</div>
+      </div>
+    </div>
+    <div class="row">
+      <img class="photo" src="../assets/images/voter_photo.jpg" alt="photo">
+      <div class="meta">
+        <div class="label">Name</div>
+        <div class="value">RAHUL KUMAR</div>
+        <div class="label">Voter ID / EPIC</div>
+        <div class="value">ABCD1234567</div>
+        <div class="label">Address</div>
+        <div class="value">123, MG Road, Bangalore, Karnataka, 560001</div>
+      </div>
+    </div>
+    <div class="small-text">DOB: 01/01/1990 &nbsp; | &nbsp; Gender: Male</div>
+    <div class="small-text">Signature of Issuing Authority</div>
+  </div>
+</body>
+</html>
